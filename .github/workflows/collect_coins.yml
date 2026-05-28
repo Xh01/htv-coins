@@ -22,7 +22,7 @@ jobs:
             access_token: ${{ github.token }}
        - name: Install Dependencies
          run: |
-           sudo apt upgrade && sudo apt update
+          sudo apt update && sudo apt upgrade
            sudo apt install curl openssl jq
        - name: Collect Coins
          timeout-minutes: 1
